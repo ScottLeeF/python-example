@@ -1,0 +1,8 @@
+student:
+  name: 张三
+  age: 24
+
+---
+student:
+  name: 李四
+  age: 25

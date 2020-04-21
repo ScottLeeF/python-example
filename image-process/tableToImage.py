@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 ## author:xx
 from PIL import Image, ImageDraw, ImageFont
-from prettytableTest import PrettyTable
+from prettytable import PrettyTable
 
 
 def create_table_img(data, img_name, **kwargs):
@@ -121,7 +121,7 @@ if __name__ == "__main__":
     describe = ['报警说明：', '日成交笔数H5与ODPS误差为：-3.4600%，高于2%', '日成交笔数H5与ODPS误差为：-3.4600%，高于2%',
                 '日成交笔数H5与ODPS误差为：-3.4600%，高于2%']
     table_title = '日成交笔数'
-    result = create_table_img(data, 't1.png', font='C:\Windows\Fonts\simkai.ttf', describe=describe,
+    result = create_table_img(data, 't1.png', font='/Users/ruiweifang/softwares/images/STLITI.TTF', describe=describe,
                               table_title=table_title)
     if result:
         print('图表生成成功')

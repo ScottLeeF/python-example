@@ -1,4 +1,6 @@
+
 import glob
+import os
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -15,7 +17,7 @@ def add_num(pattern):
         draw = ImageDraw.Draw(image)
         width, height = image.size
         draw.text((40, height - 100), u'团车网', font=set_font, fill=fill_color)
-        image.save(BASE_PATH + "watermark/" + img, 'jpeg')
+        image.save(BASE_PATH + "watermark/" + os.path.basename(img), 'jpeg')
 
     return 0
 
@@ -24,3 +26,4 @@ if __name__ == '__main__':
     pattern = BASE_PATH + '*.jpg'
 
     add_num(pattern)
+    print("批量完成添加图片水印")

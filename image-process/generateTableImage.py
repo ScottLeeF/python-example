@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
-from prettytableTest import PrettyTable, unicode
+from prettytable import PrettyTable, unicode
 
 tab = PrettyTable()
 # 设置表头
